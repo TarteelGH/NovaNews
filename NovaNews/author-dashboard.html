@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaNews | Author Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0a101c;
+            color: white;
+        }
+
+        .dashboard {
+            max-width: 900px;
+            margin: 60px auto;
+        }
+
+        .card {
+            background-color: #121c2c;
+            border: none;
+        }
+
+        .card-title,
+        .btn {
+            color: white;
+        }
+
+        .btn-add {
+            background-color: #0dcaf0;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container dashboard">
+        <h1 class="text-center mb-5">Welcome, <span class="text-info">Author</span></h1>
+
+        <!-- Add Article Section -->
+        <div class="mb-4">
+            <h4>Add New Article</h4>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Title</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Category</label>
+                    <select class="form-select" required>
+                        <option value="politics">Politics</option>
+                        <option value="economy">Economy</option>
+                        <option value="sports">Sports</option>
+                        <option value="health">Health</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Article Content</label>
+                    <textarea class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-add">Publish</button>
+            </form>
+        </div>
+
+        <!-- Existing Articles -->
+        <hr class="my-4">
+        <h4>Your Articles</h4>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h5 class="card-title">Election Results 2025</h5>
+                    <p class="card-text">Unexpected victories reshape the political landscape.</p>
+                    <div class="d-flex justify-content-between">
+                        <span class="text-muted">Published: 2025-04-29</span>
+                        <a href="#" class="btn btn-outline-info btn-sm">Edit</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h5 class="card-title">New Policy Reforms</h5>
+                    <p class="card-text">Government introduces new reforms for 2025.</p>
+                    <div class="d-flex justify-content-between">
+                        <span class="text-muted">Published: 2025-04-27</span>
+                        <a href="#" class="btn btn-outline-info btn-sm">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

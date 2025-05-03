@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaNews - Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+
+<body class="bg-dark text-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="world-news.png" alt="Logo" style="width: 30px;">
+                <span>NovaNews</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#politics">Politics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#economy">Economy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sports">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#health">Health</a></li>
+
+                </ul>
+
+
+                <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Search..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+
+                <div class="dropdown ms-2">
+                    <button class="btn btn-sm btn-outline-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Language
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="index.html">English</a></li>
+                        <li><a class="dropdown-item" href="index-ar.html">العربية</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center py-5">
+        <h1 class="display-4">Welcome to NovaNews</h1>
+        <p class="lead">Stay updated with the latest top stories from around the world.</p>
+    </div>
+
+    <div class="container my-5" id="politics">
+        <h2 class="mb-4">Politics</h2>
+        <a href="category.html" class="btn btn-outline-info mb-4">View All Politics News</a>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1011/400/200" class="card-img-top" alt="Election">
+                    <div class="card-body">
+                        <h5 class="card-title">Election Results 2025</h5>
+                        <p class="card-text">The recent elections have shocked analysts with unexpected outcomes.</p>
+                        <small class="text-muted">
+                            By <a href="author.html?name=amal-hamdan" class="text-info text-decoration-none">Amal
+                                Hamdan</a>
+                        </small>
+                        <div class="d-flex mt-3">
+                            <a href="details.html" class="btn btn-primary btn-sm">More</a>
+                            <button class="btn btn-outline-danger btn-sm ms-2" onclick="likeArticle(this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1027/400/200" class="card-img-top" alt="Policy">
+                    <div class="card-body">
+                        <h5 class="card-title">New Policy Reforms</h5>
+                        <p class="card-text">The government announced a new set of reforms to tackle inflation.</p>
+                        <small class="text-muted">
+                            By <a href="author.html?name=amal-hamdan" class="text-info text-decoration-none">Amal
+                                Hamdan</a>
+                        </small>
+                        </small>
+                        <div class="d-flex mt-3">
+                            <a href="details.html" class="btn btn-primary btn-sm">More</a>
+                            <button class="btn btn-outline-danger btn-sm ms-2" onclick="likeArticle(this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1003/400/200" class="card-img-top" alt="Summit">
+                    <div class="card-body">
+                        <h5 class="card-title">Global Summit Highlights</h5>
+                        <p class="card-text">World leaders gather to discuss climate change and trade agreements.</p>
+                        <small class="text-muted">
+                            By <a href="author.html?name=amal-hamdan" class="text-info text-decoration-none">Amal
+                                Hamdan</a>
+                        </small>
+                        </small>
+                        <div class="d-flex mt-3">
+                            <a href="details.html" class="btn btn-primary btn-sm">More</a>
+                            <button class="btn btn-outline-danger btn-sm ms-2" onclick="likeArticle(this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="economy">
+        <h2 class="mb-4">Economy</h2>
+        <a href="category.html" class="btn btn-outline-info mb-4">View All Economy News</a>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1035/400/200" class="card-img-top" alt="Market Trends">
+                    <div class="card-body">
+                        <h5 class="card-title">Global Market Trends</h5>
+                        <p class="card-text">Stock markets around the world experienced sharp fluctuations this week.
+                        </p>
+                        <small class="text-muted">
+                            By <a href="author.html?name=amal-hamdan" class="text-info text-decoration-none">Amal
+                                Hamdan</a>
+                        </small>
+                        </small>
+                        <div class="d-flex mt-3">
+                            <a href="details.html" class="btn btn-primary btn-sm">More</a>
+                            <button class="btn btn-outline-danger btn-sm ms-2" onclick="likeArticle(this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1043/400/200" class="card-img-top" alt="Inflation">
+                    <div class="card-body">
+                        <h5 class="card-title">Inflation Hits Record High</h5>
+                        <p class="card-text">Consumer prices rose at the fastest pace in over a decade.</p>
+                        <small class="text-muted">
+                            By <a href="author.html?name=amal-hamdan" class="text-info text-decoration-none">Amal
+                                Hamdan</a>
+                        </small>
+                        </small>
+                        <div class="d-flex mt-3">
+                            <a href="details.html" class="btn btn-primary btn-sm">More</a>
+                            <button class="btn btn-outline-danger btn-sm ms-2" onclick="likeArticle(this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1055/400/200" class="card-img-top" alt="Crypto">
+                    <div class="card-body">
+                        <h5 class="card-title">Cryptocurrency Crash</h5>
+                        <p class="card-text">Bitcoin and other cryptocurrencies suffer a sudden decline in value.</p>
+                        <small class="text-muted">
+                            By <a href="author.html?name=amal-hamdan" class="text-info text-decoration-none">Amal
+                                Hamdan</a>
+                        </small>
+                        </small>
+                        <div class="d-flex mt-3">
+                            <a href="details.html" class="btn btn-primary btn-sm">More</a>
+                            <button class="btn btn-outline-danger btn-sm ms-2" onclick="likeArticle(this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="sports">
+        <h2 class="mb-4">Sports</h2>
+        <a href="category.html" class="btn btn-outline-info mb-4">View All Sports News</a>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1070/400/200" class="card-img-top" alt="Match">
+                    <div class="card-body">
+                        <h5 class="card-title">Championship Finals</h5>
+                        <p class="card-text">The finals ended with a thrilling last-minute goal.</p>
+                        <small class="text-muted">
+                            By <a href="author.html?name=amal-hamdan" class="text-info text-decoration-none">Amal
+                                Hamdan</a>
+                        </small>
+                        </small>
+                        <div class="d-flex mt-3">
+                            <a href="details.html" class="btn btn-primary btn-sm">More</a>
+                            <button class="btn btn-outline-danger btn-sm ms-2" onclick="likeArticle(this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1074/400/200" class="card-img-top" alt="Player Transfer">
+                    <div class="card-body">
+                        <h5 class="card-title">Star Player Transfers</h5>
+                        <p class="card-text">Top player moves to a new club in record-breaking deal.</p>
+                        <small class="text-muted">
+                            By <a href="author.html?name=amal-hamdan" class="text-info text-decoration-none">Amal
+                                Hamdan</a>
+                        </small>
+                        </small>
+                        <div class="d-flex mt-3">
+                            <a href="details.html" class="btn btn-primary btn-sm">More</a>
+                            <button class="btn btn-outline-danger btn-sm ms-2" onclick="likeArticle(this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="health">
+        <h2 class="mb-4">Health</h2>
+        <a href="category.html" class="btn btn-outline-info mb-4">View All Health News</a>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://picsum.photos/id/1080/400/200" class="card-img-top" alt="Health Tips">
+                    <div class="card-body">
+                        <h5 class="card-title">Daily Health Tips</h5>
+                        <p class="card-text">Experts share the top 5 daily habits to boost your well-being.</p>
+                        <small class="text-muted">
+                            By <a href="author.html?name=amal-hamdan" class="text-info text-decoration-none">Amal
+                                Hamdan</a>
+                        </small>
+                        </small>
+                        <div class="d-flex mt-3">
+                            <a href="details.html" class="btn btn-primary btn-sm">More</a>
+                            <button class="btn btn-outline-danger btn-sm ms-2" onclick="likeArticle(this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    <div id="noResults" class="text-center text-light py-5" style="display: none;">
+        No matching news found.
+    </div>
+
+    <footer class="bg-black text-light pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 mb-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="world-news.png" alt="Logo" style="width: 50px;">
+                        <span class="fs-5 fw-bold text-light">NovaNews</span>
+                    </div>
+                    <p class="small">
+                        Comprehensive news coverage connecting you to a diverse network of political, economic, and
+                        social programs.
+                    </p>
+
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#politics" class="text-light text-decoration-none">Politics</a></li>
+                        <li><a href="#economy" class="text-light text-decoration-none">Economy</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Arts & Culture</a></li>
+                        <li><a href="#sports" class="text-light text-decoration-none">Sports</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Variety</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">About</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Who We Are</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Advertise With Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">Contact Us</h5>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-2 mt-2">
+                        <a href="#"><span class="btn btn-outline-light rounded-circle px-3 py-2"><i
+                                    class="bi bi-facebook"></i></span></a>
+                        <a href="#"><span class="btn btn-outline-light rounded-circle px-3 py-2"><i
+                                    class="bi bi-twitter"></i></span></a>
+                        <a href="#"><span class="btn btn-outline-light rounded-circle px-3 py-2"><i
+                                    class="bi bi-instagram"></i></span></a>
+                        <a href="#"><span class="btn btn-outline-light rounded-circle px-3 py-2"><i
+                                    class="bi bi-youtube"></i></span></a>
+                        <a href="#"><span class="btn btn-outline-light rounded-circle px-3 py-2"><i
+                                    class="bi bi-envelope"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function likeArticle(button) {
+            button.classList.toggle("btn-danger");
+            button.classList.toggle("btn-outline-danger");
+            const icon = button.querySelector("i");
+            icon.classList.toggle("bi-heart");
+            icon.classList.toggle("bi-heart-fill");
+        }
+    </script>
+
+</body>
+</html>
